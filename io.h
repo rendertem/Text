@@ -1,0 +1,2 @@
+int readInt();
+void waitNewLine();
