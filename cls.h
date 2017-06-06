@@ -1,0 +1,2 @@
+void cls();
+int getOS();

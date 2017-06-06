@@ -25,17 +25,18 @@ const int punkteMax = 45;
 
 void egrggEnde()
 {
-	system("clear");
+	cls();
 	int t = 0;
 	do
 	{
 		printf("Sie haben das Ende des erste Levels ereicht. Möchten Sie herab zu Level 2 oder einen Schritt zurücktreten?\n\tSie können ...\n");
 		printf("\t\t 1) ... zu Level 2 gehen.\n");
 		printf("\t\t 2) ... bei Level 1 bleiben.\n");
+		printf(PROMPT);
 		t = readInt();
 		if(t == 1)
 		{
-			system("clear");
+			cls();
 			printf("Level 1: %dP/%dP\n", punkteL1, punkteMaxL1);
 			printf("Insgesammt: %dP/%dP\n\n", punkte, punkteMax);
 			waitNewLine();
@@ -47,7 +48,7 @@ void egrggEnde()
 		}
 		else
 		{
-			system("clear");
+			cls();
 			fprintf(stderr, "ERROR: Aktion \"%d\" ist unbekannt!\n\tBitte geben Sie etwas anderes ein.\n", t);
 			t = 0;
 		}
@@ -56,13 +57,14 @@ void egrggEnde()
 
 void egrg()
 {
-	system("clear");
+	cls();
 	int t = 0;
 	do
 	{
 		printf("Vor ihnen ist der Ausgang von Level 1.\n\tSie können ...\n");
 		printf("\t\t 1) ... gerade aus laufen.\n");
 		printf("\t\t 2) ... sich um 180 grad drehen.\n");
+		printf(PROMPT);
 		t = readInt();
 		if(t == 1)
 		{
@@ -74,7 +76,7 @@ void egrg()
 		}
 		else
 		{
-			system("clear");
+			cls();
 			fprintf(stderr, "ERROR: Aktion \"%d\" ist unbekannt!\n\tBitte geben Sie etwas anderes ein.\n", t);
 			t = 0;
 		}
@@ -83,13 +85,14 @@ void egrg()
 
 void egrg8()
 {
-	system("clear");
+	cls();
 	int t = 0;
 	do
 	{
 		printf("Hinter ihnen ist der Ausgang von Level 1.\n\tSie können ...\n");
 		printf("\t\t 1) ... gerade aus laufen.\n");
 		printf("\t\t 2) ... sich um 180 grad drehen.\n");
+		printf(PROMPT);
 		t = readInt();
 		if(t == 1)
 		{
@@ -101,7 +104,7 @@ void egrg8()
 		}
 		else
 		{
-			system("clear");
+			cls();
 			fprintf(stderr, "ERROR: Aktion \"%d\" ist unbekannt!\n\tBitte geben Sie etwas anderes ein.\n", t);
 			t = 0;
 		}
@@ -110,7 +113,7 @@ void egrg8()
 
 void egr()
 {
-	system("clear");
+	cls();
 	int t = 0;
 	do
 	{
@@ -119,6 +122,7 @@ void egr()
 		printf("\t\t 2) ... gerade aus hüpfen.\n");
 		printf("\t\t 3) ... sich nach links drehen.\n");
 		printf("\t\t 4) ... sich um 180 grad drehen.\n");
+		printf(PROMPT);
 		t = readInt();
 		if(t == 1)
 		{
@@ -140,7 +144,7 @@ void egr()
 		}
 		else
 		{
-			system("clear");
+			cls();
 			fprintf(stderr, "ERROR: Aktion \"%d\" ist unbekannt!\n\tBitte geben Sie etwas anderes ein.\n", t);
 			t = 0;
 		}
@@ -149,7 +153,7 @@ void egr()
 
 void eglgg()
 {
-	system("clear");
+	cls();
 	int t = 0;
 	do
 	{
@@ -157,6 +161,7 @@ void eglgg()
 		printf("\t\t 1) ... sich um 180 grad drehen.\n");
 		printf("\t\t 2) ... nach vorne gehen.\n");
 		printf(schwertVorhandenN1 ? "\t\t 3) ... das Schwert nehmen.\n" : "");
+		printf(PROMPT);
 		t = readInt();
 		if(t == 1)
 		{
@@ -180,7 +185,7 @@ void eglgg()
 		}
 		else
 		{
-			system("clear");
+			cls();
 			fprintf(stderr, "ERROR: Aktion \"%d\" ist unbekannt!\n\tBitte geben Sie etwas anderes ein.\n", t);
 			t = 0;
 		}
@@ -189,7 +194,7 @@ void eglgg()
 
 void eglgg8()
 {
-	system("clear");
+	cls();
 	int t = 0;
 	do
 	{
@@ -198,6 +203,7 @@ void eglgg8()
 		printf("\t\t 2) ... nach vorne gehen.\n");
 		printf("\t\t 3) ... nach vorne hüpfen.\n");
 		printf(schwertVorhandenN1 ? "\t\t 4) ... das Schwert nehmen.\n" : "");
+		printf(PROMPT);
 		t = readInt();
 		if(t == 1)
 		{
@@ -224,7 +230,7 @@ void eglgg8()
 		}
 		else
 		{
-			system("clear");
+			cls();
 			fprintf(stderr, "ERROR: Aktion \"%d\" ist unbekannt!\n\tBitte geben Sie etwas anderes ein.\n", t);
 			t = 0;
 		}
@@ -233,7 +239,7 @@ void eglgg8()
 
 void eglg()
 {
-	system("clear");
+	cls();
 	int t = 0;
 	do
 	{
@@ -241,6 +247,7 @@ void eglg()
 		printf("\t\t 1) ... gerade aus laufen.\n");
 		printf("\t\t 2) ... gerade aus hüpfen.\n");
 		printf("\t\t 3) ... sich um 180 grad drehen.\n");
+		printf(PROMPT);
 		t = readInt();
 		if(t == 1)
 		{
@@ -257,7 +264,7 @@ void eglg()
 		}
 		else
 		{
-			system("clear");
+			cls();
 			fprintf(stderr, "ERROR: Aktion \"%d\" ist unbekannt!\n\tBitte geben Sie etwas anderes ein.\n", t);
 			t = 0;
 		}
@@ -266,7 +273,7 @@ void eglg()
 
 void eglg8()
 {
-	system("clear");
+	cls();
 	int t = 0;
 	do
 	{
@@ -274,6 +281,7 @@ void eglg8()
 		printf("\t\t 1) ... gerade aus laufen.\n");
 		printf("\t\t 2) ... gerade aus hüpfen.\n");
 		printf("\t\t 3) ... sich um 180 grad drehen.\n");
+		printf(PROMPT);
 		t = readInt();
 		if(t == 1)
 		{
@@ -289,7 +297,7 @@ void eglg8()
 		}
 		else
 		{
-			system("clear");
+			cls();
 			fprintf(stderr, "ERROR: Aktion \"%d\" ist unbekannt!\n\tBitte geben Sie etwas anderes ein.\n", t);
 			t = 0;
 		}
@@ -298,7 +306,7 @@ void eglg8()
 
 void egl()
 {
-	system("clear");
+	cls();
 	int t = 0;
 	do
 	{
@@ -308,6 +316,7 @@ void egl()
 		printf("\t\t 3) ... sich nach links drehen.\n");
 		printf("\t\t 4) ... sich nach rechts drehen.\n");
 		printf("\t\t 5) ... sich um 180 grad drehen.\n");
+		printf(PROMPT);
 		t = readInt();
 		if(t == 1)
 		{
@@ -331,7 +340,7 @@ void egl()
 		}
 		else
 		{
-			system("clear");
+			cls();
 			fprintf(stderr, "ERROR: Aktion \"%d\" ist unbekannt!\n\tBitte geben Sie etwas anderes ein.\n", t);
 			t = 0;
 		}
@@ -340,7 +349,7 @@ void egl()
 
 void eggg8()
 {
-	system("clear");
+	cls();
 	int t = 0;
 	do
 	{
@@ -349,6 +358,7 @@ void eggg8()
 		printf("\t\t 2) ... gerade aus gehen.\n");
 		printf("\t\t 3) ... gerade aus hüpfen.\n");
 		printf(schwertVorhandenN2 ? "\t\t 4) ... das Schwert nehmen.\n" : "");
+		printf(PROMPT);
 		t = readInt();
 		if(t == 1)
 		{
@@ -375,7 +385,7 @@ void eggg8()
 		}
 		else
 		{
-			system("clear");
+			cls();
 			fprintf(stderr, "ERROR: Aktion \"%d\" ist unbekannt!\n\tBitte geben Sie etwas anderes ein.\n", t);
 			t = 0;
 		}
@@ -384,13 +394,14 @@ void eggg8()
 
 void eggg()
 {
-	system("clear");
+	cls();
 	int t = 0;
 	do
 	{
 		printf("%s\n\tSie können ...\n", (schwertVorhandenN2) ? "Unter ihnen ist ein Schwert Stärke 2." : "Hier ist nichts besonderes.");
 		printf("\t\t 1) ... sich um 180 grad drehen.\n");
 		printf(schwertVorhandenN2 ? "\t\t 2) ... das Schwert nehmen.\n" : "");
+		printf(PROMPT);
 		t = readInt();
 		if(t == 1)
 		{
@@ -409,7 +420,7 @@ void eggg()
 		}
 		else
 		{
-			system("clear");
+			cls();
 			fprintf(stderr, "ERROR: Aktion \"%d\" ist unbekannt!\n\tBitte geben Sie etwas anderes ein.\n", t);
 			t = 0;
 		}
@@ -418,7 +429,7 @@ void eggg()
 
 void eg8()
 {
-	system("clear");
+	cls();
 	int t = 0;
 	do
 	{
@@ -426,6 +437,7 @@ void eg8()
 		printf("\t\t 1) ... sich nach links drehen.\n");
 		printf("\t\t 2) ... sich nach rechts drehen.\n");
 		printf("\t\t 3) ... sich um 180 grad drehen.\n");
+		printf(PROMPT);
 		t = readInt();
 		if(t == 1)
 		{
@@ -441,7 +453,7 @@ void eg8()
 		}
 		else
 		{
-			system("clear");
+			cls();
 			fprintf(stderr, "ERROR: Aktion \"%d\" ist unbekannt!\n\tBitte geben Sie etwas anderes ein.\n", t);
 			t = 0;
 		}
@@ -450,7 +462,7 @@ void eg8()
 
 void eg()
 {
-	system("clear");
+	cls();
 	int t = 0;
 	do
 	{
@@ -460,6 +472,7 @@ void eg()
 		printf("\t\t 3) ... sich nach links drehen.\n");
 		printf("\t\t 4) ... sich nach rechts drehen.\n");
 		printf("\t\t 5) ... sich um 180 grad drehen.\n");
+		printf(PROMPT);
 		t = readInt();
 		if(t == 1)
 		{
@@ -484,7 +497,7 @@ void eg()
 		}
 		else
 		{
-			system("clear");
+			cls();
 			fprintf(stderr, "ERROR: Aktion \"%d\" ist unbekannt!\n\tBitte geben Sie etwas anderes ein.\n", t);
 			t = 0;
 		}
@@ -493,16 +506,17 @@ void eg()
 
 void play()
 {
-	system("clear");
+	cls();
 	printf("LEVEL 1 (%dP)\n", punkteMaxL1);
 	waitNewLine();
-	system("clear");
+	cls();
 	int t = 0;
 	do
 	{
 		printf("Sie sind am Eingang eines Verlieses.\n\tSie können ...\n");
 		printf("\t\t 1) ... gerade aus laufen.\n");
 		printf("\t\t 2) ... gerade aus hüpfen.\n");
+		printf(PROMPT);
 		t = readInt();
 		if(t == 1)
 		{
@@ -515,7 +529,7 @@ void play()
 		}
 		else
 		{
-			system("clear");
+			cls();
 			fprintf(stderr, "ERROR: Aktion \"%d\" ist unbekannt!\n\tBitte geben Sie etwas anderes ein.\n", t);
 			t = 0;
 		}
